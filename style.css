@@ -137,3 +137,31 @@ a {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/*------------------------------------------- MEDIA QUERIES------------------------------------------- */
+/*MAKE SURE EVERYTHING LOOK OK ON SMALL SCREEN SIZE(320PX) AND LARGER SCREEN SIZE(1600PX) */
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 2em 1em; /*add  padding to container so card doesn't get too close to edges,more padding top/bottom than left/right */
+  }
+  .card {
+    max-width: 295px; /*don't let card go past 295px */
+  }
+  p.card-title {
+    font-size: 1rem;
+  }
+  .card p.extra-small-font {
+    /*need high specificity to apply these new styles to this class */
+    font-size: 0.59rem;
+    border: 2px solid blue;
+    text-wrap: nowrap; /* at around 370px the "front end developer and avid read text starts to wrap" */
+  }
+  li {
+    font-size: 0.67rem;
+  }
+  .attribution {
+    text-wrap: nowrap;
+    font-size: 0.55rem;
+  }
+}
