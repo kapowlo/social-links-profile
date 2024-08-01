@@ -1,18 +1,21 @@
 @font-face {
   font-family: "Inter";
-  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Inter";
-  src: url(assets/fonts/static/Inter-Bold.ttf);
+  font-family: "Inter-Bold";
+  src: url(assets/fonts/static/Inter-Bold.ttf) format("truetype");
+  font-weight: 900;
 }
 @font-face {
-  font-family: "Inter";
-  src: url(assets/fonts/static/Inter-Regular.ttf);
+  font-family: "Inter-Regular";
+  src: url(assets/fonts/static/Inter-Regular.ttf) format("truetype");
+  font-weight: 400; /*same as normal */
 }
 @font-face {
-  font-family: "Inter";
-  src: url(assets/fonts/static/Inter-SemiBold.ttf);
+  font-family: "Inter-SemiBold";
+  src: url(assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
 }
 
 /*---------------------------------------CSS RESET--------------------------------------- */
@@ -37,7 +40,7 @@
 /*---------------------------------------BODY + GENERAL STYLES--------------------------------------- */
 body {
   height: 100vh;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif; /*fallback incase 'inter font' doesn't work */
 }
 
 ul {
@@ -54,7 +57,6 @@ img {
 .container {
   height: 100%;
   background-color: var(--grey-900);
-  border: 6px solid red;
 
   display: flex;
   flex-direction: column; /*attribution should text should go under card */
@@ -66,7 +68,7 @@ img {
 
 .card {
   max-width: 375px;
-  border: 2px solid rebeccapurple;
+
   background-color: var(--grey-800);
   padding: 1.5em; /*might increase if card is too small */
 
@@ -78,39 +80,41 @@ img {
 
 p.card-title {
   margin-top: 0.85rem;
-  font-weight: 700;
+  font-family: "Inter-Bold", sans-serif;
   font-size: 1.5rem;
 }
 
 p.extra-small-font.green {
   /* target 2nd paragraph */
-  border: 4px solid red;
+
   margin-top: 0.25rem;
 
   font-size: var(--small-font-size);
-  font-weight: 600;
+  font-family: "Inter-SemiBold", sans-serif;
   color: var(--green);
 }
 .card p:last-of-type {
   /* targets only 3rd paragraph */
-  border: 4px solid dodgerblue;
+
   margin: 1.25rem 0 1.15rem 0; /*just want margin on top and bottom */
 
   font-size: var(--small-font-size);
+  font-family: "Inter-Regular", sans-serif;
 }
 
 /*----------------------------------------NAV STYLES---------------------------------------- */
 li {
   background-color: var(--grey-700);
-  border: 2px solid red;
+
   border-radius: 8px;
   padding: 0.51em;
 
   font-size: var(--small-font-size);
+  font-family: "Inter-SemiBold", sans-serif;
 }
 li:not(:first-child) {
   /*selects all li except the first li  */
-  border: 2px solid rgb(0, 255, 216);
+
   margin-top: 1rem;
 }
 li:hover,
@@ -154,7 +158,7 @@ a {
   .card p.extra-small-font {
     /*need high specificity to apply these new styles to this class */
     font-size: 0.59rem;
-    border: 2px solid blue;
+
     text-wrap: nowrap; /* at around 370px the "front end developer and avid read text starts to wrap" */
   }
   li {
