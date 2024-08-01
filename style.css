@@ -50,11 +50,6 @@ img {
   border-radius: 50%;
 }
 
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
 /*---------------------------------------CONTAINER STYLES---------------------------------------- */
 .container {
   height: 100%;
@@ -78,7 +73,7 @@ a {
   color: var(--white); /*all text inside card  except span text will be white */
 
   /*all the content inside card should be centered and stacked on top of each other */
-  text-align: center; /*either this or flexbox...? */
+  text-align: center;
 }
 
 p.card-title {
@@ -129,6 +124,7 @@ a {
   this fixes the bug where the font color wouldn't change  
   */
   color: inherit;
+  text-decoration: none;
 }
 
 /*----------------------------------------ATTRIBUTION STYLES---------------------------------------- */
