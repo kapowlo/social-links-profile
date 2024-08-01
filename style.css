@@ -71,6 +71,7 @@ img {
 
   background-color: var(--grey-800);
   padding: 1.5em; /*might increase if card is too small */
+  border-radius: 8px;
 
   color: var(--white); /*all text inside card  except span text will be white */
 
