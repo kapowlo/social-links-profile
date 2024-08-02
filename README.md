@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-flexbox-social-links-profile-9dDAO-z31N]
+- Live Site URL: [https://kapowlo.github.io/social-links-profile/]
 
 ### Built with
 
