@@ -27,7 +27,7 @@
 
 /*---------------------------------------CUSTOM VARIABLES--------------------------------------- */
 :root {
-  --small-font-size: 0.75rem;
+  --small-font-size: 0.79rem;
 
   --green: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
@@ -134,6 +134,7 @@ a {
 
 /*----------------------------------------ATTRIBUTION STYLES---------------------------------------- */
 .attribution {
+  padding-top: 1.2em; /*creates space between attribution and card */
   font-size: var(--small-font-size);
 
   color: var(--white);
